@@ -30,6 +30,9 @@ where `|00>` and `|11>` represent binary states of two electrons or spins[web:65
 Install dependencies:
 
 
+pip install qiskit , matplotlib , qiskit_aer , qiskit_ibm_runtime
+
+
 
 
 
@@ -49,9 +52,7 @@ Run the following code in a Python environment or Jupyter notebook:
 - [Visualizing Quantum Results][web:65]
 - [Quantum Entanglement Theory][web:29]
 
-## License
 
-MIT License
 
 ---
 
