@@ -10,7 +10,7 @@ In this repository, the entanglement between two qubits is generated and analyze
 \[
 |\Phi^+\rangle = \frac{1}{\sqrt{2}}(|00\rangle + |11\rangle)
 \]
-where `|00>` and `|11>` represent binary states of two electrons or spins[web:65][web:54][web:29].
+where `|00>` and `|11>` represent binary states of two electrons or spins.For more information on this topic,check the websites in the [References](#references) section.
 
 ## Features
 
@@ -48,10 +48,9 @@ Run the following code in a Python environment or Jupyter notebook:
 
 ## References
 
-- [IBM Quantum Qiskit Documentation][web:54]
-- [Visualizing Quantum Results][web:65]
-- [Quantum Entanglement Theory][web:29]
-
+- [IBM Quantum Qiskit Documentation](https://quantum.cloud.ibm.com/docs/en/guides)
+- [Visualizing Quantum Results](https://quantum.cloud.ibm.com/docs/en/guides/visualize-results)
+- [Quantum Entanglement Theory](https://scienceexchange.caltech.edu/topics/quantum-science-explained/entanglement)
 
 
 ---
