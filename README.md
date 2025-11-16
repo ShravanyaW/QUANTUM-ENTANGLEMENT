@@ -7,9 +7,11 @@ This project demonstrates the creation, simulation, and visualization of quantum
 Quantum entanglement is a fundamental phenomenon in quantum mechanics where two or more particles become linked and share quantum states, such that the state of one particle instantly influences the state of the other, no matter the distance between them. This property is a cornerstone for quantum computing, quantum cryptography, and teleportation.
 
 In this repository, the entanglement between two qubits is generated and analyzed as a Bell state:
-\[
+
+$$
 |\Phi^+\rangle = \frac{1}{\sqrt{2}}(|00\rangle + |11\rangle)
-\]
+$$
+
 where `|00>` and `|11>` represent binary states of two electrons or spins.For more information on this topic,check the websites in the [References](#references) section.
 
 ## Features
