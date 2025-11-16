@@ -43,13 +43,14 @@ pip install qiskit , matplotlib , qiskit_aer , qiskit_ibm_runtime
 Run the Flask file in a Python environment.
 
 <img width="1036" height="849" alt="image" src="https://github.com/user-attachments/assets/48b7efb9-1e8e-4a1d-8b30-692280865a60" />
-The chart here shows the quantum entanglement of $|00>$ and  $|11>$ qubits while the input box is to specify the number of qubits (100 by default).
 
-The number of qubits can be any integer greater than 1.
+The chart here shows the quantum entanglement of $|00>$ and $|11>$ qubits while the input box is to specify the number of qubits (100 by default).
+
+The number of qubits can be any integer greater than 1
 
 ## Results
 
-- **Measurement outcomes:** Only  $|00>$ and  $|11>$ states appear, with near-equal probabilities, confirming quantum entanglement.
+- **Measurement outcomes:** Only $|00>$ and $|11>$ states appear, with near-equal probabilities, confirming quantum entanglement.
 - **Statevector visualization:** Shows the symmetric superposition of both qubits.
 
 ## References
@@ -62,4 +63,3 @@ The number of qubits can be any integer greater than 1.
 ---
 
 Contributions and improvements are welcome!
-
