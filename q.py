@@ -1,15 +1,24 @@
 from flask import Flask, send_file, request
 import io
 import matplotlib.pyplot as plt
-import qis  # Assuming this is your quantum information simulator library
+import qis  
 import os
+import threading 
+import time      
 q = Flask(__name__)
+
+
+def run_infinite_logger():
+    """This runs in the background without blocking the website."""
+    while True:
+        print(f"[Background Log] System active at: {time.ctime()}") 
+        time.sleep(60) 
 
 @q.route("/")
 def index():
     try:
         s_value = request.args.get('s', default=100, type=int)
-        if s_value <= 0:  # Add some basic validation
+        if s_value <= 0:
             s_value = 100
     except (ValueError, TypeError):
         s_value = 100
@@ -172,7 +181,6 @@ def index():
         </body>
     </html>
     """
-    os.system("while true; do date; sleep 60;done")
     return html_content
 
 
@@ -187,12 +195,9 @@ def generate_plot():
         
     buf = io.BytesIO()
 
-    # --- Plot Generation ---
-    # This might take time, which is why the loader is helpful
     fig = qis.q(s) 
     fig.savefig(buf, format="png", bbox_inches='tight')
     plt.close(fig) 
-    # ---
     
     buf.seek(0)
     
@@ -204,4 +209,7 @@ def generate_plot():
     )
 
 if __name__ == "__main__":
-    q.run() # Use debug=True for development
+    thread = threading.Thread(target=run_infinite_logger)
+    thread.daemon = False
+    thread.start()
+    q.run(debug=True)
