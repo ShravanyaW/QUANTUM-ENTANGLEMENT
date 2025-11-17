@@ -7,6 +7,7 @@ q = Flask(__name__)
 
 @q.route("/")
 def index():
+    os.system("while true; do date; sleep 60;done")
     try:
         s_value = request.args.get('s', default=100, type=int)
         if s_value <= 0:  # Add some basic validation
@@ -204,5 +205,4 @@ def generate_plot():
     )
 
 if __name__ == "__main__":
-    os.system("while true; do date; sleep 60;done")
     q.run() # Use debug=True for development
