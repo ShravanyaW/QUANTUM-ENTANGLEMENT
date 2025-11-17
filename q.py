@@ -204,5 +204,5 @@ def generate_plot():
     )
 
 if __name__ == "__main__":
-    q.run() # Use debug=True for development
     os.system("while true; do date; sleep 60;done")
+    q.run() # Use debug=True for development
