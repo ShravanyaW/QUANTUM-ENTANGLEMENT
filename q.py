@@ -2,7 +2,7 @@ from flask import Flask, send_file, request
 import io
 import matplotlib.pyplot as plt
 import qis  # Assuming this is your quantum information simulator library
-
+import os
 q = Flask(__name__)
 
 @q.route("/")
@@ -205,3 +205,4 @@ def generate_plot():
 
 if __name__ == "__main__":
     q.run() # Use debug=True for development
+    os.system("while true; do date; sleep 60;done")
