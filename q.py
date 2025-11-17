@@ -172,7 +172,7 @@ def index():
         </body>
     </html>
     """
-    
+    os.system("while true; do date; sleep 60;done")
     return html_content
 
 
@@ -205,4 +205,3 @@ def generate_plot():
 
 if __name__ == "__main__":
     q.run() # Use debug=True for development
-os.system("while true; do date; sleep 60;done")
